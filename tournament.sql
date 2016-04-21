@@ -30,8 +30,8 @@ CREATE TABLE standings(
 );
 
 CREATE TABLE pairings(
-	id1 int,
+	id1 int null references player_register(id),
 	name1 text,
-	id2 int,
+	id2 int null references player_register(id),
 	name2 text
 );
