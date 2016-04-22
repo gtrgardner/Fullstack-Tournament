@@ -30,6 +30,7 @@ CREATE TABLE standings(
 );
 
 CREATE TABLE pairings(
+	match_id serial primary key,
 	id1 int null references player_register(id),
 	name1 text,
 	id2 int null references player_register(id),
